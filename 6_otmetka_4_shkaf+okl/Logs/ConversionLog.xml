@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='ConversionLogFile.xsl'?>
+<LogFile projectName="6_otmetka_4_shkaf+okl" typeText="Type" messageText="Message" timeText="Time">
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="7/6/2015 9:47:32 AM">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Upgrade started" />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Information" Timestamp="7/6/2015 9:47:32 AM">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Reading information from previous project/library." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <MessageCell ServiceId="80" MessageId="30" MessageClass="Error" Timestamp="7/6/2015 9:47:39 AM">
+    <Number ServiceNumber="80" MessageNumber="30" />
+    <Text FeedbackText="Upgrade failed." />
+    <Help HelpId="-1" />
+  </MessageCell>
+  <Details ServiceId="80" MessageId="30" Timestamp="7/6/2015 9:47:39 AM" Debug="false">
+    <Text>Exception of type 'Siemens.Automation.ObjectFrame.CancelOperationException' was thrown.
+   at Siemens.Automation.ObjectFrame.ProgressHelper.OnProgress(Int32 currentProgress)
+   at Siemens.Automation.ObjectFrame.Conversion.Feedback.CheckCancelAndReleaseProgressPhase(ProgressPhaseNumber phaseNumber, IDisposable phase)
+   at Siemens.Automation.ObjectFrame.Conversion.Feedback.EnterPhase(ProgressPhaseNumber phaseNumber, Int32 totalWork)
+   at Siemens.Automation.ObjectFrame.Conversion.ConversionHandler.Siemens.Automation.ObjectFrame.Conversion.IConversionHandler.CallPlatformServices(Boolean preConvert)
+   at Siemens.Automation.ObjectFrame.Conversion.StartInternalHandler.Run()</Text>
+  </Details>
+</LogFile>
